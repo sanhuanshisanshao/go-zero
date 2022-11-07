@@ -93,6 +93,7 @@ func genHandlers(dir, rootPkg string, cfg *config.Config, api *spec.ApiSpec) err
 
 func genHandlerImports(group spec.Group, route spec.Route, parentPkg string) string {
 	imports := []string{
+		fmt.Sprintf("\"%s\"", pathx.JoinPackages(parentPkg, errCode)),
 		fmt.Sprintf("\"%s\"", pathx.JoinPackages(parentPkg, getLogicFolderPath(group, route))),
 		fmt.Sprintf("\"%s\"", pathx.JoinPackages(parentPkg, contextDir)),
 	}

@@ -3,6 +3,7 @@ package gogen
 const (
 	internal      = "internal/"
 	typesPacket   = "types"
+	errCode       = internal + "errcode"
 	configDir     = internal + "config"
 	contextDir    = internal + "svc"
 	handlerDir    = internal + "handler"
