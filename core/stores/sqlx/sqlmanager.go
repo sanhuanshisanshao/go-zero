@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zeromicro/go-zero/core/syncx"
+	"github.com/sanhuanshisanshao/go-zero/core/syncx"
 )
 
 const (

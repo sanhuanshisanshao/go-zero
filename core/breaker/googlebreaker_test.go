@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/sanhuanshisanshao/go-zero/core/collection"
+	"github.com/sanhuanshisanshao/go-zero/core/mathx"
+	"github.com/sanhuanshisanshao/go-zero/core/stat"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/collection"
-	"github.com/zeromicro/go-zero/core/mathx"
-	"github.com/zeromicro/go-zero/core/stat"
 )
 
 const (

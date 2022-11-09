@@ -1,4 +1,4 @@
-module github.com/zeromicro/go-zero
+module github.com/sanhuanshisanshao/go-zero
 
 go 1.16
 

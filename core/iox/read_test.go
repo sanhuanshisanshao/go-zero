@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/sanhuanshisanshao/go-zero/core/fs"
+	"github.com/sanhuanshisanshao/go-zero/core/stringx"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/fs"
-	"github.com/zeromicro/go-zero/core/stringx"
 )
 
 func TestReadText(t *testing.T) {

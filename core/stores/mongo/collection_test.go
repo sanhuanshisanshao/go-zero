@@ -8,11 +8,11 @@ import (
 
 	"github.com/globalsign/mgo"
 	"github.com/golang/mock/gomock"
+	"github.com/sanhuanshisanshao/go-zero/core/breaker"
+	"github.com/sanhuanshisanshao/go-zero/core/logx"
+	"github.com/sanhuanshisanshao/go-zero/core/stores/mongo/internal"
+	"github.com/sanhuanshisanshao/go-zero/core/stringx"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/core/breaker"
-	"github.com/zeromicro/go-zero/core/logx"
-	"github.com/zeromicro/go-zero/core/stores/mongo/internal"
-	"github.com/zeromicro/go-zero/core/stringx"
 )
 
 var errDummy = errors.New("dummy")
