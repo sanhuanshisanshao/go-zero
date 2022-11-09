@@ -91,6 +91,7 @@ func genHandlers(dir, rootPkg string, cfg *config.Config, api *spec.ApiSpec) err
 	return nil
 }
 
+// "digtwin/internal/validate"
 func genHandlerImports(group spec.Group, route spec.Route, parentPkg string) string {
 	imports := []string{
 		fmt.Sprintf("\"%s\"", pathx.JoinPackages(parentPkg, errCode)),
@@ -99,6 +100,7 @@ func genHandlerImports(group spec.Group, route spec.Route, parentPkg string) str
 	}
 	if len(route.RequestTypeName()) > 0 {
 		imports = append(imports, fmt.Sprintf("\"%s\"\n", pathx.JoinPackages(parentPkg, typesDir)))
+		imports = append(imports, fmt.Sprintf("\"%s\"", pathx.JoinPackages(parentPkg, validate)))
 	}
 
 	return strings.Join(imports, "\n\t")
