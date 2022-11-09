@@ -3,7 +3,8 @@ package {{.PkgName}}
 import (
 	"net/http"
 
-	"github.com/sanhuanshisanshao/go-zero/rest/httpx"
+	"github.com/zeromicro/go-zero/rest/httpx"
+
 	{{.ImportPackages}}
 )
 
@@ -12,6 +13,11 @@ func {{.HandlerName}}(svcCtx *svc.ServiceContext) http.HandlerFunc {
 		{{if .HasRequest}}var req types.{{.RequestType}}
 		if err := httpx.Parse(r, &req); err != nil {
 			httpx.Error(w, err)
+			return
+		}
+
+		if err := validate.Validate(req); err != nil {
+			httpx.OkJson(w, errcode.ValidateErr(err))
 			return
 		}
 
