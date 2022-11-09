@@ -8,13 +8,13 @@ import (
 	"strings"
 
 	"github.com/emicklei/proto"
-	"github.com/zeromicro/go-zero/core/collection"
-	conf "github.com/zeromicro/go-zero/tools/goctl/config"
-	"github.com/zeromicro/go-zero/tools/goctl/rpc/parser"
-	"github.com/zeromicro/go-zero/tools/goctl/util"
-	"github.com/zeromicro/go-zero/tools/goctl/util/format"
-	"github.com/zeromicro/go-zero/tools/goctl/util/pathx"
-	"github.com/zeromicro/go-zero/tools/goctl/util/stringx"
+	"github.com/sanhuanshisanshao/go-zero/core/collection"
+	conf "github.com/sanhuanshisanshao/go-zero/tools/goctl/config"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/rpc/parser"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/util"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/util/format"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/util/pathx"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/util/stringx"
 )
 
 const (

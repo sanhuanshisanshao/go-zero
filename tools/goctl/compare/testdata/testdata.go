@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/logrusorgru/aurora"
-	"github.com/zeromicro/go-zero/tools/goctl/util/pathx"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/util/pathx"
 )
 
 type (

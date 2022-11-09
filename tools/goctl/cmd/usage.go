@@ -5,7 +5,7 @@ import (
 	"runtime"
 
 	"github.com/logrusorgru/aurora"
-	"github.com/zeromicro/go-zero/tools/goctl/vars"
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/vars"
 )
 
 var colorRender = []func(v interface{}) string{
