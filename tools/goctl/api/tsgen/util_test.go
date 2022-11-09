@@ -1,8 +1,8 @@
 package tsgen
 
 import (
+	"github.com/sanhuanshisanshao/go-zero/tools/goctl/api/spec"
 	"github.com/stretchr/testify/assert"
-	"github.com/zeromicro/go-zero/tools/goctl/api/spec"
 	"testing"
 )
 
